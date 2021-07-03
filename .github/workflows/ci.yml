@@ -1,8 +1,4 @@
 name: CI of semantyca
-
-defaults:
-  run:
-    working-directory: semantyca
     
 on:
   workflow_dispatch:
@@ -26,7 +22,6 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - run: pwd    
-    - run: cd build
     - run: ls
 
     - name: Copying files to server
@@ -38,5 +33,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
         rm: true
-        source: "build/index.html,build/asset-manifest.json,build/favicon.ico,build/manifest.json,build/robots.txt"
+        source: "build/index.html"
         target: "${{ secrets.REMOTE_DIR }}"

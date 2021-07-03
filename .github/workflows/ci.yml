@@ -31,4 +31,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
         rm: true
+        src: "/build"
         target: "${{ secrets.REMOTE_DIR }}"

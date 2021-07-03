@@ -5,8 +5,7 @@ function App() {
         <div>
             <header className="App-header">
                 <nav className="navbar navbar-expand-md navbar-dark navbar-custom">
-                    <a className="navbar-brand" href="#">SEMANTYCA</a>
-
+                    SEMANTYCA
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>

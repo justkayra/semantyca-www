@@ -1,7 +1,14 @@
 name: CI of semantyca
 
+defaults:
+  run:
+    shell: bash
+    working-directory: semantyca
+    
 on:
   workflow_dispatch:
+  
+  
 
 
 jobs:

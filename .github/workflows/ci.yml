@@ -32,5 +32,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
         rm: true
-        source: "./build/css/*,./build/js/*,./build/img/*,./build/static/*,./build/index.html,./build/asset-manifest.json,./build/favicon.ico, ./build/manifest.json,./build/robots.txt"
+        source: "build/index.html,build/asset-manifest.json,build/favicon.ico,build/manifest.json,build/robots.txt,build/css/*,build/js/*,build/img/*,build/static/*"
         target: "${{ secrets.REMOTE_DIR }}"

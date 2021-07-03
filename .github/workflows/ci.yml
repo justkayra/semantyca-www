@@ -34,4 +34,4 @@ jobs:
         passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
         rm: true
         source: "build/index.html"
-        target: "${{ secrets.REMOTE_DIR }}"
+        target: "/home/juka/"

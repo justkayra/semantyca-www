@@ -18,7 +18,7 @@ function App() {
                                 <a className="nav-link active" href="https://www.semantyca.com">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link disabled" href="#">Features</a>
+                                <a className="nav-link disabled" href="https://juka.semantyca.com">Features</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link active" href="https://juka.semantyca.com">Tasks</a>

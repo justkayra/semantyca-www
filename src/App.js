@@ -13,14 +13,7 @@ function App() {
                     </button>
 
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="https://www.semantyca.com">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                Tasks
-                            </li>
-                        </ul>
+                      afaf
                     </div>
                 </nav>
             </header>

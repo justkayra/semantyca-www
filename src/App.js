@@ -18,7 +18,6 @@ function App() {
                                 <a className="nav-link active" href="https://www.semantyca.com">Home</a>
                             </li>
                             <li className="nav-item">
-                              {/*  <a className="nav-link active" href="https://juka.semantyca.com">Tasks</a>*/}
                                 Tasks
                             </li>
                         </ul>

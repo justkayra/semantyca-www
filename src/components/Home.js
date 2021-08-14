@@ -11,11 +11,11 @@ class Home extends React.Component {
         super(props);
         this.state = {
             lang: 'en',
-            name: '',
+            name: 'Semantyca',
             motto: '',
             subMotto: '',
-            menuHome: '',
-            menuHasks: ''
+            menuHome: 'Home',
+            menuHasks: 'Tasks'
         };
 
     }

@@ -80,7 +80,7 @@ class Home extends React.Component {
                 <div>
                     <header className="App-header">
                         <nav className="navbar navbar-expand-md navbar-dark navbar-custom">
-                            <a className="navbar-brand" href="https://www.semantyca.com"/>
+                            <a className="navbar-brand" href="https://www.semantyca.com">Semantyca</a>
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#collapsibleNavbar">
                                 <span className="navbar-toggler-icon">{this.state.name}</span>

@@ -33,11 +33,12 @@ jobs:
         source: "build/"
         target: "${{ secrets.REMOTE_DIR }}"
         
-    - name: ls -a via ssh
+    - name: restart web-server
       uses: garygrossgarten/github-action-ssh@release
       with:
        command: systemctl restart semantyca.service
        host: ${{ secrets.REMOTE_HOST }}
+       port: ${{ secrets.REMOTE_PORT }}
        username: ${{ secrets.REMOTE_USER }}
        passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
        privateKey: ${{ secrets.SSH_KEY}}

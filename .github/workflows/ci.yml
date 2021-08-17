@@ -1,4 +1,4 @@
-name: CI of semantyca
+name: CI of semantyca-www
     
 on:
   workflow_dispatch:
@@ -32,3 +32,12 @@ jobs:
         rm: false
         source: "build/"
         target: "${{ secrets.REMOTE_DIR }}"
+        
+    - name: ls -a via ssh
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+       command: systemctl restart semantyca.service
+       host: ${{ secrets.REMOTE_HOST }}
+       username: ${{ secrets.REMOTE_USER }}
+       passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
+       privateKey: ${{ secrets.SSH_KEY}}

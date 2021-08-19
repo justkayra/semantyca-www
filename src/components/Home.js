@@ -25,7 +25,8 @@ class Home extends React.Component {
             withCredentials: false,
             headers: {
                 'Accept': 'application/json',
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
+                'Access-Control-Allow-Origin': 'semantyca.com'
             }
         });
         let URL = process.env.REACT_APP_REST_HOST + '/data/lang/' + this.state.lang;

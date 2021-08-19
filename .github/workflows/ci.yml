@@ -3,7 +3,7 @@ name: CI of semantyca-www
 on:
   push:
     branches:
-     - main
+     - master
 
 jobs:
   build:

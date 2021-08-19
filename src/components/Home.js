@@ -28,7 +28,7 @@ class Home extends React.Component {
                 'Content-type': 'application/json'
             }
         });
-        let URL = process.env.REACT_APP_REST_HOST + '/home/' + this.state.lang;
+        let URL = process.env.REACT_APP_REST_HOST + '/data/lang/' + this.state.lang;
         connectSession.get(URL)
             .then(response => {
                 let data = response.data;
